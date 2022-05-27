@@ -7,14 +7,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.binar_suit_chp6.R
 
 class MainActivity : AppCompatActivity() {
+
+    val image = getDrawable(0)
     private val peopleList = listOf<People>(
-        People("ucup", 31),
-        People("reza", 44),
-        People("jisung", 18),
-        People("mark", 30),
-        People("aries", 22),
-        People("renjung", 23),
-        People("perik",33)
+        People("ucup", 31,this.image),
+        People("reza", 44,image),
+        People("jisung", 18,image),
+        People("mark", 30,image),
+        People("aries", 22,image),
+        People("renjung", 23,image),
+        People("perik",33,image)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
