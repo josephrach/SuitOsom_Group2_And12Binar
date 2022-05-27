@@ -5,7 +5,28 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.binar_suit_chp6.R
 
-class PeopleAdapter(private val dataPeople: List<People>) : RecyclerView.Adapter<PeopleViewHolder>(){
+class PeopleAdapter : RecyclerView.Adapter<PeopleViewHolder>(){
+    private val dataPeople: MutableList<People> = mutableListOf()
+
+    //add function to add item list
+    fun addList(dataList:List<People>){
+        dataPeople.addAll(dataList)
+        notifyDataSetChanged()
+        sort()
+    }
+
+    //add function to add item single
+    fun addItem(dataSingle: People){
+        dataPeople.add(dataSingle)
+        notifyDataSetChanged()
+        sort()
+    }
+
+    fun sort(){
+        dataPeople.sortBy { it.name }
+        notifyDataSetChanged()
+    }
+
 
     //membuat item view dari xml secara sequental untuk view holder
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeopleViewHolder {

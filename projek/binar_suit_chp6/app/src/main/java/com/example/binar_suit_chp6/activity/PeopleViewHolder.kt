@@ -11,10 +11,8 @@ class PeopleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(people: People){
         val tvName :TextView = itemView.findViewById(R.id.item_tv_name)
         val tvAge :TextView = itemView.findViewById(R.id.item_tv_age)
-        val tvImage :ImageView = itemView.findViewById(R.id.item_tv_image)
 
         tvName.text = people.name
         tvAge.text = people.age.toString()
-        tvImage.resources.
     }
 }

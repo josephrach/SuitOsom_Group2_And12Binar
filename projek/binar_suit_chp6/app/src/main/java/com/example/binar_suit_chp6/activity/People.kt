@@ -4,6 +4,5 @@ import android.graphics.drawable.Drawable
 
 data class People(
     val name :String,
-    val age :Int,
-    val image :Drawable?
+    val age :Int
 )
