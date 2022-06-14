@@ -24,7 +24,7 @@ class SplashscreenActivity: AppCompatActivity() {
     public fun setDelaynMove(){
         val handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, InputPlayer1Activity::class.java)
             startActivity(intent)
             finish()
         },3000)
