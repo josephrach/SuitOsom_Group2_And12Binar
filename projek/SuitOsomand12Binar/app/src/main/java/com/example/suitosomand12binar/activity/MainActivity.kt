@@ -7,12 +7,15 @@ import com.example.suitosomand12binar.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private var _binding: ActivityMainBinding? = null
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewPagerAdapter: ViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        _binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = requireNotNull(_binding)
+        setContentView(binding.root)
 
     }
 
