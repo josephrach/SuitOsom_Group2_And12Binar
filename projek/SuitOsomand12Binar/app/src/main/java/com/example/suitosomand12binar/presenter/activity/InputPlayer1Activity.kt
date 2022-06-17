@@ -3,14 +3,12 @@ package com.example.suitosomand12binar.activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import com.example.suitosomand12binar.R
-import com.example.suitosomand12binar.database.PermainanDatabase
+import com.example.suitosomand12binar.sources.database.PermainanDatabase
 import com.example.suitosomand12binar.databinding.ActivityMainBinding
 import com.example.suitosomand12binar.dataclass.Pemain1
-import com.example.suitosomand12binar.interfaces.Pemain1Dao
+import com.example.suitosomand12binar.sources.interfaces.Pemain1Dao
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -41,7 +39,7 @@ class InputPlayer1Activity: AppCompatActivity() {
 
         btnSubmit?.setOnClickListener(){
             namaPemain = etNama?.text.toString()
-            saveToDatabase(namaPemain)
+//            saveToDatabase()
 
         }
     }

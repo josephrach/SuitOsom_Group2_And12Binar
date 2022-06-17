@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.suitosomand12binar.R
-import com.example.suitosomand12binar.fragment.InputnameFragment
-import com.example.suitosomand12binar.fragment.Landingpage1Fragment
-import com.example.suitosomand12binar.fragment.Landingpage2Fragment
+import com.example.suitosomand12binar.view.fragment.InputnameFragment
+import com.example.suitosomand12binar.view.fragment.Landingpage1Fragment
+import com.example.suitosomand12binar.view.fragment.Landingpage2Fragment
 
 class ScreenSlidePagerActivity: AppCompatActivity() {
 

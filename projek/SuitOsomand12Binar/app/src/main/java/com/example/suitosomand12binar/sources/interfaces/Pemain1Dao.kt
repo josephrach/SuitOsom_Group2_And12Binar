@@ -1,4 +1,4 @@
-package com.example.suitosomand12binar.interfaces
+package com.example.suitosomand12binar.sources.interfaces
 
 import androidx.room.*
 import androidx.room.OnConflictStrategy.REPLACE
