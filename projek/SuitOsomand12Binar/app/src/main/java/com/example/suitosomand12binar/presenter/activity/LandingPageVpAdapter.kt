@@ -3,7 +3,7 @@ package com.example.suitosomand12binar.activity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
 
-class ViewPagerAdapter(){
+class LandingPageVpAdapter(){
     private var listFragment: List<Fragment> = emptyList()
 
 //    fun addFragmentList(fragments:List<Fragment>){
